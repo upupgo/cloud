@@ -1,0 +1,3 @@
+com\upupgo\ribbon\RibbonServerApplication.class
+com\upupgo\ribbon\controller\RibbonController.class
+com\upupgo\ribbon\service\HelloService.class

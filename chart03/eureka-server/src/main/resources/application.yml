@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 9761
+  address: 127.0.0.1
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${server.address}:${server.port}
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    eureka-server-u-r-l-context: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:9761/eureka/
+

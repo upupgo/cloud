@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: feign-server
+server:
+  port: 8765
+  address: 127.0.0.1
+eureka:
+  client:
+    eureka-server-u-r-l-context: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:9761/eureka/
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${server.port}

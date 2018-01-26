@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: service-ribbon
+server:
+  port: 8764
+  address: 127.0.0.1
+eureka:
+  client:
+    eureka-server-u-r-l-context: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:9761/eureka/
+  instance:
+    hostname: localhost
+

@@ -1,0 +1,11 @@
+server:
+  address: 127.0.0.1
+  port: 8762
+spring:
+  application:
+    name: client-eureka
+eureka:
+  client:
+    eureka-server-u-r-l-context: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:9761/eureka/
+  instance:
+    hostname: localhost
